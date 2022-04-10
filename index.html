@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Fråga D</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Fråga D: Boxmodellen</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="dennaSida">Sida 1</a></li>
+        <li><a href="/sida2.html">Sida 2</a></li>
+        <li><a href="/sida3.html">Sida 3</a></li>
+      </ul>
+    </nav>
+    <hr />
+
+    <main class="wrapper">
+      <div class="box1">
+        <h4>
+          1. Beskriv <em>boxmodellen</em> och ge en kort förklaring av var och
+          en av de CSS-egenskaper som ingår i den.
+        </h4>
+
+        <p><em>Svar:</em></p>
+        <div class="svar">
+          <p>
+            Varje element som skrivs in i en HTML-dokument är strukturerad
+            utifrån olika rutor där varje ruta kan struktureras utifrån
+            webbutvecklarens tycke. Boxmodellen består av självaste innehållet
+            av elementet som definieras av höjd samt bredd. Sedan har vi
+            padding, border(kantlinjerna), margin(mariginalen).
+          </p>
+
+          <ul>
+            <li>
+              <strong>Innehållet</strong> består av självaste elementet, detta
+              kan i sin tur vara antingen en bild eller text. Elementet kan
+              sedan i sin tur styras av elementen <em>width</em> och
+              <em>height</em> som sätter just bredden och höjden för elementet.
+            </li>
+            <li>
+              <strong>Padding</strong> kan grovt översättas till vadderingen och
+              detta är rutan som går runt elementet och skapar utrymme mellen
+              innehållet och kantlinjen
+            </li>
+            <li>
+              <strong>Border</strong> är en kantlinje som omringar elementet,
+              som lättare kan illustreras med bilden nedan
+            </li>
+            <li>
+              <strong>Margin</strong> som är marginalen som sätts utanför
+              kantlinjen och skapar utrymme mellan webbplatsens fönster och
+              border.
+            </li>
+          </ul>
+        </div>
+
+        <img
+          src="images/Boxmodellen.png"
+          alt="illustration av boxmodellen"
+          width="700"
+        />
+        <br />
+      </div>
+      <div class="box2">
+        <h4>
+          2. Beskriv också skillnaden mellan värdena <em>content-box</em> och
+          <em>border-box</em> för CSS-egenskapen <em>box-sizing</em>.
+        </h4>
+
+        <p><em>Svar:</em></p>
+        <p class="svar">
+          Om man vill att bredden eller höjden av sitt element ska vara ett
+          specifikt mått (exklusive margin) så kan man antingen beräkna samman
+          den totala bredden/höjden genom följande:
+          <em>bredden/höjden av innehållet + (padding * 2) + (border * 2)</em>
+          och sedan beräkna hur mycket padding samt border bör vara, vilket i
+          termer av CSS är <strong>box-sizing: content-box</strong> vilket är en
+          standard. Vill man instället att bredden och höjden är försatta i
+          relation till border och padding så använder man sig istället av
+          <strong>box-sizing: border-box</strong>. Detta kommer gör att
+          exempelvis om vi sätter bredden på 300px så kommer
+          <em>bredden + padding + border = 300px</em>. För att få en
+          illustration av hur detta kan se ut kan ni se nedanstående bild.
+        </p>
+
+        <img
+          src="/images/Border-box.png"
+          alt="Illustration av border-box"
+          width="800"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <img src="images/bild-jag.png" alt="En bild på författaren" width="75" />
+      <p>Författare: <em>Victor Guzmán</em></p>
+      <p>
+        Kontakta mig:
+        <a href="mailto:victorguzman@live.se">victorguzman@live.se</a>
+      </p>
+    </footer>
+  </body>
+</html>
